@@ -1,9 +1,9 @@
 <?php
 // Database
-$db['host'] = 'mysql.gocheckbook.com';
-$db['user'] = 'psnapuser';
-$db['pass'] = 'ow7WxQW3';
-$db['name'] = 'phillysnap';
+$db['host'] = '';
+$db['user'] = '';
+$db['pass'] = '';
+$db['name'] = '';
 
 define('DEFAULT_CONTROLLER', 'stores');
 define('DEFAULT_ACTION', 'index');

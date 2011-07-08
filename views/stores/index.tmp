@@ -1,0 +1,48 @@
+<form id="search" onSubmit="return search(document.getElementById('address').value);">
+Address: <input type="text" name="address" id="address" value="<?php echo isset($address) ? $address : ''; ?>" />
+<input type="submit" value="Search" />
+</form>
+<br />
+
+<div id="phone">
+	<div id="phone_container">
+		<div id="phone_recipient_label">To:</div>
+		<div id="phone_recipient">267-293-9387</div>
+		<div id="phone_message_label">Message:</div>
+		<div id="phone_message">123 Main St</div>
+	</div>
+</div>
+
+<?php echo $this->Html->img('market_.png', array('align' => 'right', 'class' => 'contentimg')); ?>The United States Supplemental Nutrition Assistance Program (SNAP), historically and commonly known as the Food Stamp Program, is a federal-assistance program that provides assistance to low- and no-income people and families living in the U.S. Though the program is administered by the U.S. Department of Agriculture, benefits are distributed by the individual U.S. states.
+
+<br /><br />
+<?php echo $this->Html->img('iphone_.png', array('align' => 'left', 'class' => 'contentimg')); ?>Text your street address to <b>267-293-9387</b> and receive the nearest Farmers Market address, dates of operation and hours, the closet two SNAP-participating retailers, and information on how to maximize your SNAP dollars through local fresh food initiatives.
+
+<br /><br />
+Did you know most of Philadelphia's Farmer's Market accept SNAP
+benefits for payment? Many of Philadelphia's Farmers' Markets even
+give out additional bonus coupons for SNAP spending in their markets.
+
+<br /><br />
+Giving Philadelphians the information to spend SNAP benefits at local
+fresh markets brings healthy food to our tables and supports local
+businesses and farms.
+
+<br /><br />
+<div id="video">
+	<iframe src="http://player.vimeo.com/video/26097355?title=0&amp;byline=0&amp;portrait=0&amp;color=ef3c4e" width="400" height="225" frameborder="0"></iframe>
+</div>
+
+<br /><br />
+<i>API: http://www.phillysnap.com/stores/search.json/[address]/[optional # of results]/[optional start_at_result #]</i>
+
+<br /><br />
+<b>Made By</b><br />
+Mark Headd<br />
+Tim Wisniewski<br />
+Danny Chang<br />
+Katey Metzroth<br />
+
+<br />
+Produced at the June 3-5 Philadelphia installment of <a href="http://www.rhok.org/problems/phillysnap" target="_blank">Random Hacks of Kindness (RHoK)</a><br />
+Download the Presentation <a href="PhillySNAP.pdf">Here</a>

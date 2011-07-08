@@ -1,0 +1,8 @@
+<?php
+if(isset($market) && isset($stores)) {
+	echo json_encode(array('market' => $market, 'stores' => $stores));
+}
+if(isset($error)) {
+	echo json_encode(array('error' => $error,));
+}
+?>

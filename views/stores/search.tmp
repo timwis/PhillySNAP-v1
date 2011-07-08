@@ -1,0 +1,54 @@
+<form id="search" onSubmit="return search(document.getElementById('address').value);">
+Address: <input type="text" name="address" id="address" value="<?php echo isset($address) ? $address : ''; ?>" />
+<input type="submit" value="Search" />
+</form>
+<br />
+
+<?php if(isset($error)): ?>
+<div id="error">
+	<?php echo $error; ?>
+</div>
+<?php endif; ?>
+
+<?php if(isset($market)): ?>
+<h3>Nearest SNAP-Accepting Farmers' Market</h3>
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Address</th>
+		<th>Hours</th>
+		<th>Distance</th>
+	</tr>
+	<tr>
+		<td><?php echo $market['name']; ?></td>
+		<td><?php echo $market['address']; ?></td>
+		<td><?php echo $market['hours']; ?></td>
+		<td><?php echo $market['distance']; ?></td>
+	</tr>
+</table>
+<br />
+<?php endif; ?>
+
+<?php if(isset($stores)): ?>
+<h3>Nearest SNAP-Accepting Retail Locations</h3>
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Address</th>
+		<th>City</th>
+		<th>State</th>
+		<th>Zip</th>
+		<th>Distance</th>
+	</tr>
+	<?php foreach($stores as $store): ?>
+	<tr>
+		<td><?php echo $store['store_name']; ?></td>
+		<td><?php echo $store['address']; ?></td>
+		<td><?php echo $store['city']; ?></td>
+		<td><?php echo $store['state']; ?></td>
+		<td><?php echo $store['zip5'] . ($store['zip4'] ? '-'.$store['zip4'] : ''); ?></td>
+		<td><?php echo $store['distance']; ?></td>
+	</tr>
+	<?php endforeach; ?>
+</table>
+<?php endif; ?>
